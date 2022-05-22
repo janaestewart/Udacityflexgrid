@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 35vh 35vh 35vh;
+    grid-template-rows: 45vh 45vh;
+    grid-gap: 15px;
+    grid-template-areas: "topLeft topMiddle topRight " "bottomLeft bottomLeft bottomRight" 
+    ;
+    border: 3px solid blue;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#one {
+    grid-area: topLeft;
+}
+
+#two {
+    grid-area: bottomLeft;
+}
+
+#three{
+    grid-area: bottomRight;
+} 
+
+#four{
+    grid-area: topRight;
+}
+
+#five{
+    grid-area: topMiddle;
+}
